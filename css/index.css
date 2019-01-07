@@ -1,0 +1,99 @@
+/*CSS Reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+button, input, select, textarea { outline:none; } /* 去除轮廓线 */
+button, a, label, input[type='check'] { cursor: pointer }
+
+html, body { height: 100%; }
+body { font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif; color:#333; background:#fff }
+ol, ul { list-style:none; }
+em,i { font-style: normal; }
+textarea { resize:none; }
+a, a:hover { text-decoration:none; }
+img { vertical-align: middle; border: none; }
+table { border-collapse:collapse; border-spacing:0 }
+input, button { border: none; }
+
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }/* 清除浮动 */
+.clearfix { *zoom: 1; } /* IE6、7专有 */
+
+/*common*/
+.w{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+.btn{
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+/*style*/
+header {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+header h1 {
+    color: #666;
+    font-size: 18px;
+    line-height: 50px;
+}
+section h2 {
+    font-size: 30px;
+    color: #34495e;
+    margin: 30px 0 50px 0;
+    text-align: center;
+}
+section .canvas-box {
+    width: 800px;
+    height: 400px;
+    overflow: auto;
+    margin: 0 auto;
+    /*background-color: #cccccc;*/
+}
+/*section canvas {*/
+    /*width: 800px;*/
+    /*height: 400px;*/
+/*}*/
+
+section .colors {
+    margin: 10px 0;
+    width: 490px;
+    height: 70px;
+    background-color: #7f7f7f;
+    overflow: hidden;
+}
+section .colors li {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+section .colors li.selected {
+    width: 14px;
+    height: 14px;
+    border: 3px solid #DAA520;
+}
+section .btns input{
+    margin-left:3px;
+}
+section .btns .btn-all{
+    background-color: #0c79b1;
+    border-color: #0c79b1;
+}
+section .btns .btn-5x{
+    background-color: #19a7f0;
+    border-color: #19a7f0;
+}
+section .btns .btn-10x{
+    background-color: #5eb95e;
+    border-color: #5eb95e;
+}
